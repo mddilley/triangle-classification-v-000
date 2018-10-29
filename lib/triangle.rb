@@ -14,7 +14,7 @@ class Triangle
 
   def kind
     #binding.pry
-    if @sides.select {|side| side <= 0 } != [] || inequality
+    if @sides.select {|side| side <= 0 } != [] || !inequality
       raise TriangleError
     else
       triangle_type

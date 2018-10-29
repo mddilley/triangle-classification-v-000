@@ -13,11 +13,11 @@ class Triangle
       :equilateral
     elsif @length1 == @length2 || @length2 == @length3 || @length1 == @length3
       :isosceles
-    elsif
+    else
       :scalene
     end
   end
 
-  
+
 
 end

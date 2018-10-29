@@ -22,7 +22,8 @@ class Triangle
   end
 
   def equality
-    
+    sorted = @sides.sort
+        
   end
 
   def triangle_type

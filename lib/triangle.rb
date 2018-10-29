@@ -14,17 +14,15 @@ class Triangle
 
   def kind
     #binding.pry
-    if @sides.select {|side| side <= 0 } != [] || equality
+    if @sides.select {|side| side <= 0 } != [] || inequality
       raise TriangleError
     else
       triangle_type
     end
   end
 
-  def equality
-    sorted = @sides.sort
-    greatest_side = sorted.pop
-    greatest_side < (sorted[0] + sorted[1])    
+  def inequality
+    @length1 + @length2 > @length
   end
 
   def triangle_type

@@ -14,14 +14,16 @@ class Triangle
 
   def kind
     #binding.pry
-    if @sides.select {|side| side <= 0 } != []
+    if @sides.select {|side| side <= 0 } != [] || equality
       raise TriangleError
     else
       triangle_type
     end
   end
 
-
+  def equality
+    
+  end
 
   def triangle_type
     if @length1 == @length2 && @length2 == @length3

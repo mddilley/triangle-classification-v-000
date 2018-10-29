@@ -13,7 +13,7 @@ class Triangle
   end
 
   def kind
-    binding.pry
+    #binding.pry
     if @sides.detect {|side| side == 0}
       begin
         raise TriangleError

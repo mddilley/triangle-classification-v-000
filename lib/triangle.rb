@@ -14,7 +14,9 @@ class Triangle
     if @sides.each {|side| side == 0}
       begin
         raise TriangleError
-      rescue TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
   end
 
    def triangle_type

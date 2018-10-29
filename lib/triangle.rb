@@ -11,6 +11,7 @@ class Triangle
   end
 
   def kind
+    binding.pry
     if @sides.each {|side| side == 0}
       begin
         raise TriangleError

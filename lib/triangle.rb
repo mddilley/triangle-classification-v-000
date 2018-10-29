@@ -18,6 +18,6 @@ class Triangle
     end
   end
 
-  def is
+  
 
 end

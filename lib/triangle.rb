@@ -22,7 +22,7 @@ class Triangle
   end
 
   def inequality
-    @length1 + @length2 > @length && @length2 + @length3 > @length1 && @length1 + @length3 > @length2
+    @length1 + @length2 > @length3 && @length2 + @length3 > @length1 && @length1 + @length3 > @length2
   end
 
   def triangle_type

@@ -14,7 +14,7 @@ class Triangle
 
   def kind
     #binding.pry
-    if !@sides.include?(1..BigDecimel('Infinity')
+    if !@sides.include?(1..BigDecimel('Infinity'))
       raise TriangleError
     else
       triangle_type

@@ -17,6 +17,9 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
+    else
+      triangle_type
+    end
   end
 
    def triangle_type

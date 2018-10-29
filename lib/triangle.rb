@@ -19,5 +19,5 @@ class Triangle
   end
 
   def is
-  
+
 end

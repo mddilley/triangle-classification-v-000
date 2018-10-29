@@ -11,7 +11,10 @@ class Triangle
   end
 
   def kind
-    if @length1 == 0 || @length2 == 0 || @length3 == 0 ||
+    if @sides.each {|side| side == 0}
+      begin
+        raise TriangleError
+      rescue TriangleError
   end
 
    def triangle_type
@@ -25,7 +28,9 @@ class Triangle
    end
 
   class TriangleError < StandardError
-    "Invalid Triangle Dimensions"
+    def message
+      "Invalid Triangle Dimensions"
+    end
   end
 
 

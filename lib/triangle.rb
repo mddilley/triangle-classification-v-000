@@ -23,7 +23,8 @@ class Triangle
 
   def equality
     sorted = @sides.sort
-        
+    greatest_side = sorted.pop
+    greatest_side < sorted.sum    
   end
 
   def triangle_type

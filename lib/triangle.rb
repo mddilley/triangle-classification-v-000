@@ -24,7 +24,7 @@ class Triangle
   def equality
     sorted = @sides.sort
     greatest_side = sorted.pop
-    greatest_side < sorted.sum    
+    greatest_side < (sorted[0] + sorted[1])    
   end
 
   def triangle_type

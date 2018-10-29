@@ -18,6 +18,9 @@ class Triangle
     end
   end
 
+  class TriangleError < StandardError
+    "Invalid Triangle Dimensions"
+  end
 
 
 end

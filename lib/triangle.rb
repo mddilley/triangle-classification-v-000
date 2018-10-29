@@ -14,7 +14,7 @@ class Triangle
 
   def kind
     #binding.pry
-    if !@sides.include?(1..Float::INFINITY)
+    if @sides.detect {|side| side > 0 } == nil
       raise TriangleError
     else
       triangle_type

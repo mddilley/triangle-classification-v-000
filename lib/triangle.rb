@@ -7,7 +7,7 @@ class Triangle
     @length2 = length2
     @length3 = length3
     @sides = []
-    @sides << @length1, @length2, @length3
+    @sides << [@length1, @length2, @length3]
   end
 
   def kind

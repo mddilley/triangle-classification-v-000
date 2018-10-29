@@ -21,15 +21,17 @@ class Triangle
     end
   end
 
-   def triangle_type
-     if @length1 == @length2 && @length2 == @length3
-       :equilateral
-     elsif @length1 == @length2 || @length2 == @length3 || @length1 == @length3
-       :isosceles
-     else
-       :scalene
-     end
+
+
+  def triangle_type
+    if @length1 == @length2 && @length2 == @length3
+      :equilateral
+    elsif @length1 == @length2 || @length2 == @length3 || @length1 == @length3
+      :isosceles
+    else
+      :scalene
    end
+  end
 
   class TriangleError < StandardError
     def message
